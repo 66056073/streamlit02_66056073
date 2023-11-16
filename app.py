@@ -18,9 +18,6 @@ st.write("""
 """)
 
 trees_df = pd.read_csv('trees.csv')
-# df_dbh_grouped = pd.DataFrame(
-#     trees_df.groupby(['dbh']).count()['tree_id'])
-# df_dbh_grouped.columns = ['tree_count']
 
 owners = st.sidebar.multiselect(
     "Tree Owner Filter",

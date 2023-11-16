@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 st.set_page_config(layout='wide')
 
 st.markdown('สวัสดี! **Streamlit**')
-st.title('San Francisco Columns')
+st.title('San Francisco Trees Columns')
 st.write("""
 เราจะลองทำ San Francisco Dataset กันดู
 """)

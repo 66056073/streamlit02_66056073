@@ -32,13 +32,13 @@ st.divider()
 
 col1, col2, col3 = st.columns(3)
 with col1:
-    st.write('Column 1')
+    st.write('Line Chart')
     st.line_chart(df_dbh_grouped)
 with col2:
-    st.write('Column 2')
+    st.write('Bar Chart')
     st.bar_chart(df_dbh_grouped)
 with col3:
-    st.write('Column 3')
+    st.write('Area Chart')
     st.area_chart(df_dbh_grouped)
 
 # tab1, tab2, tab3 = st.tabs(['Line Chart', 'Bar Chart', 'Area Chart'])

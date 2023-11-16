@@ -30,6 +30,17 @@ df_dbh_grouped.columns = ['tree_count']
 
 st.divider()
 
+col1, col2, col3 = st.columns(3)
+with col1:
+    st.write('Column 1')
+    st.line_chart(df_dbh_grouped)
+with col2:
+    st.write('Column 2')
+    st.bar_chart(df_dbh_grouped)
+with col3:
+    st.write('Column 3')
+    st.area_chart(df_dbh_grouped)
+
 # tab1, tab2, tab3 = st.tabs(['Line Chart', 'Bar Chart', 'Area Chart'])
 # with tab1:
 #     st.write('Column 1')

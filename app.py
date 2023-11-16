@@ -2,9 +2,14 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from st_pages import Page, show_pages
+# from st_pages import Page, show_pages
 
 st.set_page_config(layout='wide')
+# show_pages(
+#     [
+#
+#     ]
+# )
 
 st.markdown('สวัสดี! **Streamlit**')
 st.title('San Francisco Trees Columns')
@@ -60,7 +65,3 @@ st.write("""
 """)
 
 st.divider()
-
-trees_df = trees_df.dropna(subset=['longitude', 'latitude'])
-trees_df = trees_df.sample(n=1000, replace=True)
-st.map(trees_df)

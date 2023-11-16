@@ -1,13 +1,15 @@
 import streamlit as st
 import pandas as pd
-# from st_pages import Page, show_pages
+from st_pages import Page, show_pages
 
 st.set_page_config(layout='wide')
-# show_pages(
-#     [
-#
-#     ]
-# )
+show_pages(
+    [
+        Page('app.py', 'Home'),
+        Page('pages/tab.py', 'Tab Layout'),
+        Page('pages/map.py', 'Map Layout')
+    ]
+)
 
 st.markdown('สวัสดี! **Streamlit**')
 st.title('San Francisco Trees Columns')
